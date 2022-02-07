@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Expence Tracker</title>
+        <style>
+        body{
+            text-align: center;
+        }
+            table{
+                border: 1px solid black;
+                width: 100%;
+                margin-top: 30px;
+            }
+            #input-el{
+                width:90%;
+                margin:5px;
+                height:25px;
+            }
+            #date-el{
+                width:40%;
+                margin-left: 10px;
+                height:25px;
+            }
+            #amount-el{
+                width:40%;
+                margin-left: 5px;
+                height:25px;
+            }
+            table, tr{
+            border:1px solid black;
+            }
+            label{
+            margin-left: 10px;
+            }
+            button{
+                margin-top: 20px;
+                background-color: #038f11;
+                color: white;
+                height:30px;
+                width:150px;
+                font-size:15px;
+                font-weight:bold;
+                border:none;
+                border-radius: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Expence Tracker</h1>
+        <h3 style="color:#038f11">Add a new Item:</h3>
+        <label for="name">Name:</label>
+        <input type="text" id="input-el" placeholder="Where was the expence made?"/><br>
+        <label for="date">Date:</label>
+        <input type="date" id="date-el" />
+        <label for="amount">Amount:</label>
+        <input type="text" id="amount-el"/>
+
+        <button id="addEx">Add Expence</button>
+        <button id="clear" onclick="clearTable()">Clear</button>
+        <div class="data">
+        <table id="content">
+            <thead>
+            <tr>
+                
+                <th>Name</th>
+                <th>Date</th>
+                <th>Amount</th>
+                <th></th>
+                
+            </tr>
+        </thead>
+           
+            <tbody id="dataEl">
+
+            </tbody>
+            
+            </table>
+        </div>
+        <script src="expence.js"></script>
+    </body>
+</html>
